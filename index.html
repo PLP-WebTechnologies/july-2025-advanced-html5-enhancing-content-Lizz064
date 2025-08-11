@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Form</title>
+</head>
+<body>
+<header>
+    <h1>Enhanced HTML5 Form Demo</h1>
+</header>
+
+<main>
+    <!-- Section 1: Lists -->
+    <section>
+        <h2>Our Digital Services</h2>
+        <p>We provide a variety of digital services to help your business grow:</p>
+        <ul>
+            <li>Responsive Website Design</li>
+            <li>Mobile Application Development</li>
+            <li>Search Engine Optimization (SEO)</li>
+            <li>Content Creation & Marketing</li>
+        </ul>
+    </section>
+
+    <!-- Section 2: Table -->
+    <section>
+        <h2>Service Pricing</h2>
+        <table border="1" cellpadding="5">
+            <tr>
+                <th>Service</th>
+                <th>Duration</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Responsive Website Design</td>
+                <td>2 Weeks</td>
+                <td>$500</td>
+            </tr>
+            <tr>
+                <td>Mobile App Development</td>
+                <td>4 Weeks</td>
+                <td>$1200</td>
+            </tr>
+            <tr>
+                <td>SEO Optimization</td>
+                <td>1 Week</td>
+                <td>$300</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Section 3: Media -->
+    <section>
+        <h2>Our Workspace</h2>
+        <img src="wallpaer.jpg" alt="Office workspace photo" width="800">
+
+        <h3>Intro Video</h3>
+        <video controls width="400">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+
+        <h3>Background Music</h3>
+        <audio controls>
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
+    </section>
+
+    <!-- Section 4: HTML5 Form -->
+    <section>
+        <h2>Client Information Form</h2>
+        <form action="#" method="post" autocomplete="on">
+
+            <!-- Personal Details -->
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="fullname" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="eliza.mijide@gmail.com" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+254712345678" pattern="^\+?\d{7,15}$" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="client-id">Client ID:</label>
+                <input type="text" id="client-id" name="client-id" value="AUTO12345" readonly>
+            </fieldset>
+
+            <!-- Account Setup -->
+            <fieldset>
+                <legend>Account Setup</legend>
+                <label for="password">Create Password:</label>
+                <input type="password" id="password" name="password" placeholder="Minimum 8 characters" minlength="8" required>
+
+                <label for="service">Select Service:</label>
+                <select id="service" name="service" required>
+                    <option value="">--Please choose an option--</option>
+                    <option value="web">Website Design</option>
+                    <option value="app">Mobile App Development</option>
+                    <option value="seo">SEO Optimization</option>
+                </select>
+
+                <label>Preferred Contact Method:</label>
+                <input type="radio" id="contact-email" name="contact-method" value="email" required>
+                <label for="contact-email">Email</label>
+                <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                <label for="contact-phone">Phone</label>
+            </fieldset>
+
+            <!-- Additional Info -->
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label>Extra Features:</label>
+                <input type="checkbox" id="feature-analytics" name="features" value="analytics">
+                <label for="feature-analytics">Analytics</label>
+                <input type="checkbox" id="feature-security" name="features" value="security">
+                <label for="feature-security">Security</label>
+
+                <label for="message">Additional Comments:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Write your message here..."></textarea>
+
+                <label for="file">Upload Project Brief (PDF or DOC):</label>
+                <input type="file" id="file" name="project-file" accept=".pdf,.doc,.docx">
+            </fieldset>
+
+            <!-- Submit -->
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Enhanced Form Demo. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
